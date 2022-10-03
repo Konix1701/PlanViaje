@@ -1,0 +1,11 @@
+#main-menu{
+    left:unset;
+    right:0;
+}
+#ordenar-ciudad{
+    cursor:pointer;
+}
+#form-container{
+    width:40vw;
+}
+
