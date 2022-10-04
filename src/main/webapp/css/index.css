@@ -1,0 +1,10 @@
+.bg-login-image{
+    background: url("../img/Viajes.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 10px;
+}
+.sizeDiv{
+    width:40vw;
+}
+

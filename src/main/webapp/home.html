@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unicornios viajeros</title>
+        <link rel="icon" type="image/png" href="img/luna.png"/>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+              integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+              crossorigin="anonymous" />
+
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Inicio</title>
+    </head>
+    <body>
+        <div class="container-fluid p-5 btn-primary text-white text-center">
+            <h1>Unicornios Viajeros</h1>
+        </div>
+        
+        <ul class="nav nav-tabs">
+
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contactanos</a>
+            </li>
+        </ul>
+        <nav class="navbar navbar-dark bd-dark">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <div id="user-data-profile">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="ajustes">Ajustes</span>
+                    </button>
+                    <div class="dropdown-menu" id="main-menu">
+                        <a id="mi-perfil-btn" class="dropdown-item" href="profile.html">Mi perfil</a>
+                        <a id="salir-btn" class="dropdown-item" href="login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="p-4 d-flex justify-content-center">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Id Guía</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col" id="ordenar-ciudad" data-toogle="tooltip" 
+                            data-placement="top" title="Ordenar por ciudad">Ciudad
+                            <span class="fas fa-sort" id="icono-ordenar"></span></th>
+                        <th scope="col">Zona</th> 
+                        <th scope="col">Teléfono</th> 
+                        <th scope="col">Correo</th> 
+                        <th scope="col">Reservar</th>
+                    </tr>
+                </thead>
+                <tbody id="guias-tbody">
+
+                </tbody>
+            </table>
+        </main>
+        
+        <section>
+            <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary" style="background-color:green">
+                <!-- Copyright -->
+                <div class="text-white mb-1 mb-md-0">
+                    Copyright © 2022. All rights reserved.
+                </div>
+                <!-- Copyright -->  
+            </div>
+        </section>
+    </body>
+</html>

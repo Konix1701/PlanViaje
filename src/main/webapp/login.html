@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unicornios viajeros</title>
+        <link rel="icon" type="image/png" href="img/luna.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="css/index.css" rel="stylesheet">
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid p-5 btn-primary text-white text-center">
+            <h1>Unicornios Viajeros</h1>
+        </div>
+
+        <ul class="nav nav-tabs">
+
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Registro</a>
+            </li>
+        </ul>
+        <div class="container py-3">
+            <div class="card my-5">
+                <div class="card-body">
+                    <div class="row m-3">
+                        <div class="col-md-6 bg-login-image"></div>
+                        <div class="col-md-6">
+                            <h1 class="h4 text-gray-900 my-3">Bienvenido</h1>
+                            <form id="form-login">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary btn-block" id="BTNENTRAR">Entrar</button>
+                                <hr>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="register.html">¿Aún no tienes cuenta? Registrarme</a>
+                    <div id="login-error" class="alert alert-danger d-none" role="alert">Usuario o contraseña incorrectos</div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Amazonas1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>AMAZONAS</h1>
+                            <p>La Amazonia destaca por ser una de las ecorregiones con mayor biodiversidad del mundo</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Bogota1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>BOGOTA</h1>
+                            <p>Bogotá es el mayor centro industrial y comercial del país y el cuarto más importante de todo Latinoamérica.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Boyaca1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>BOYACA</h1>
+                            <p>Boyacá es el departamento de Colombia que más hectáreas de páramo tiene</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Bucaramanga1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>BUCARAMANGA</h1>
+                            <p>Visita Barichara, el pueblo colonial más bonito de Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Cali1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>CALI</h1>
+                            <p>La capital de la Salsa</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Cartagena1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>CARTAGENA</h1>
+                            <p>Un lugar donde las playas solo son el inicio de múltiples aventuras que puedes tener</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Guajira1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>GUAJIRA</h1>
+                            <p>Donde el desierto se encuentra con el mar</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Medellin1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>MEDELLIN</h1>
+                            <p>La piedra del Peñol,uno de los dos monolitos mas grandes del mundo</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Pasto1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>PASTO</h1>
+                            <p>El Santuario de las Lajas es una imponente obra que se alza en un abismo, sobre el cañón del río Guáitara, el lugar donde se apareció la virgen.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/Popayan1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>POPAYAN</h1>
+                            <p>Es llamada comúnmente “la ciudad blanca” por el color de las casas que adornan su arquitectura colonial.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        <section>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-xl-8 text-center">
+                    <h3 class="mb-4">Reviews</h3>
+                    <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                        Para nosotros lo mas importante es que nuestros unicornios puedan disfrutar de estas experiencias con la naturaleza.
+                        Dar un paseo por la naturaleza tiene poder sanador para nuestras mentes y almas. No pedimos nada de la naturaleza, 
+                        sin embargo la naturaleza nos brinda silencio, paz, armonía y belleza sin límites. Caminar en la naturaleza es una 
+                        terapia gratuita y eficiente para nuestras vidas estresadas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="img/Testimonio5.jpg"
+                             class="rounded-circle shadow-1-strong" width="250" height="250" />
+                    </div>
+                    <h5 class="mb-3">Santiago Ramirez</h5>
+                    <h6 class="text-primary mb-3">Web Developer</h6>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>Gracias a uncornios viajeros pude desconectarme de mi trabajo
+                        y logré conectar nuevamente con la naturaleza. El guía muy amable y el tour estuvo muy organizado. ¡Muy recomendado!
+
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="img/Testimonio2.jpg"
+                             class="rounded-circle shadow-1-strong" width="250" height="250" />
+                    </div>
+                    <h5 class="mb-3">Lisa Cudrow</h5>
+                    <h6 class="text-primary mb-3">Graphic Designer</h6>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i> Miguel is excellent. We've had him plan two Colombian trips 
+                        for us and each one he has listened to our needs and dit he did it well with our itineraries. We wanted to get a good experience without 
+                        sacrificing our budget! We really appreciate that.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="img/Testimonio1.jpg"
+                             class="rounded-circle shadow-1-strong" width="250" height="250" />
+                    </div>
+                    <h5 class="mb-3">Vicente Ortiz</h5>
+                    <h6 class="text-primary mb-3">Marketing Specialist</h6>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>Muy recomendado, perfecto si buscas una escapadita de la monotonía.
+                        Los precios son muy razonables.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="far fa-star fa-sm text-warning"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>    
+
+        <section>
+            <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary" style="background-color:green">
+                <!-- Copyright -->
+                <div class="text-white mb-1 mb-md-0">
+                    Copyright © 2022. All rights reserved.
+                </div>
+                <!-- Copyright -->  
+            </div>
+        </section>
+    </body>
+</html>
